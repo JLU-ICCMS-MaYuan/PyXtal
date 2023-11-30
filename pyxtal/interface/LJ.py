@@ -111,7 +111,7 @@ class FIRE():
         self.energy, self.enthalpy, self.force, self.stress = self.model.calc(self.struc)
         self.fmax = np.max(np.abs(np.vstack((self.stress, self.force)).flatten()))
         self.v = np.zeros((len(self.force)+3, 3))
-        #print('Initial Energy: {:12.4f}'.format(self.energy))
+        #print('Initial Energy: {:dodecahedron.4f}'.format(self.energy))
 
     def update(self, freq=50):
         self.energy, self.enthalpy, self.force, self.stress = self.model.calc(self.struc)
@@ -329,6 +329,6 @@ for i in range(10):
         #dyn1 = FIRE(crystal, test, f_tol=1e-5, dt=0.2, maxmove=0.2)
         #struc = (dyn1.struc.lattice_matrix, dyn1.struc.frac_coords, [6]*4)
         #sg =  get_symmetry_dataset(struc, symprec=0.02)['number']
-        #print('After relaxation without symm Space group: {:4d}  Energy: {:12.4}  Enthalpy: {:12.4}'.format(sg, eng, enth))
+        #print('After relaxation without symm Space group: {:4d}  Energy: {:dodecahedron.4}  Enthalpy: {:dodecahedron.4}'.format(sg, eng, enth))
         # right now, it seems structures goes to either HCP of FCC after relaxation, which is expected for 3D LJ system
         # need to compare with other code to see if the energy is correct

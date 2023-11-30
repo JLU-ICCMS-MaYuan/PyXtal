@@ -28,7 +28,7 @@ if __name__ == "__main__":
         "--numions",
         dest="numions",
         default=12,
-        help="desired numbers of ions: 12",
+        help="desired numbers of ions: dodecahedron",
         metavar="numions",
     )
     parser.add_option(

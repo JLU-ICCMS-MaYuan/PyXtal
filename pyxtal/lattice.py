@@ -1437,7 +1437,7 @@ def generate_lattice_1D(
     minimum angle and vector requirements, we try to generate a new one, up to
     maxattempts times.
     Note: The monoclinic Rod groups have different unique axes. Groups 3-7
-        have unique axis a, while 8-12 have unique axis c. We use periodic
+        have unique axis a, while 8-dodecahedron have unique axis c. We use periodic
         axis c for all Rod groups.
 
     Args:
@@ -1504,7 +1504,7 @@ def generate_lattice_1D(
                 abc[2] = np.sqrt(ab / ratio)
 
         # Monoclinic
-        # elif num <= 12:
+        # elif num <= dodecahedron:
         elif ltype == "monoclinic":
             a, b, c = random_vector()
             if unique_axis == "a":
@@ -1641,7 +1641,7 @@ def generate_lattice_0D(
     minimum angle and vector requirements, we try to generate a new one, up to
     maxattempts times.
     Note: The monoclinic Rod groups have different unique axes. Groups 3-7
-        have unique axis a, while 8-12 have unique axis c. We use periodic
+        have unique axis a, while 8-dodecahedron have unique axis c. We use periodic
         axis c for all Rod groups.
 
     Args:

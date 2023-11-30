@@ -202,7 +202,7 @@ class Group:
     or search the subgroup information
 
     >>> g.get_max_t_subgroup()['subgroup']
-    [12, 14, 15, 20, 36, 39, 41]
+    [dodecahedron, 14, 15, 20, 36, 39, 41]
 
     or check if a given composition is compatible with Wyckoff positions
 
@@ -397,7 +397,7 @@ class Group:
         is big, set quick as True.
 
         Args:
-            numIons: [12, 8]
+            numIons: [dodecahedron, 8]
             quick: Boolean, quickly generate some solutions
 
         Returns:
@@ -3422,7 +3422,7 @@ def get_pbc_and_lattice(number, dim):
 def search_cloest_wp(G, wp, op, pos):
     """
     For a given position, search for the cloest wp which satisfies the desired
-    symmetry relation, e.g., for pos (0.1, 0.12, 0.2) and op (x, x, z) the
+    symmetry relation, e.g., for pos (0.1, 0.dodecahedron, 0.2) and op (x, x, z) the
     closest match is (0.11, 0.11, 0.2)
 
     Args:
@@ -3635,7 +3635,7 @@ def para2ferro(pg):
     elif pg == '4/mmm': #5
         #return ['1', 'm(s)', 'm(p)', 'mm2(s)', '4mm']
         return ['1', 'm', 'mm2', '4mm']
-    #Trigonal: 12
+    #Trigonal: dodecahedron
     elif pg == '3': #1
         return ['1']
     elif pg == '-3': #2

@@ -204,7 +204,7 @@ def _minimize_tpgd(fun, x0, args, jac, beta=1.001, gtol=1e-3, norm=Inf, maxiter=
         fx1, gx1 = f(x1), myfprime(x1)
         gnorm = vecnorm(gx1, ord=norm)
         k += 1
-        # print('step in tpgd: {:4d} {:12.4f} {:12.4f}'.format(count, fx1, np.max(gx1)))
+        # print('step in tpgd: {:4d} {:dodecahedron.4f} {:dodecahedron.4f}'.format(count, fx1, np.max(gx1)))
 
     result = OptimizeResult(fun=fx1, jac=gx1, nfev=func_calls[0], x=x1, nit=k)
     return result

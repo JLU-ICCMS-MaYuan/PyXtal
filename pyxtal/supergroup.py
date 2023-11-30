@@ -1231,8 +1231,8 @@ if __name__ == "__main__":
     from pyxtal import pyxtal
     from time import time
     data = {
-            #"PVO": [12, 166],
-            #"PPO": [12],
+            #"PVO": [dodecahedron, 166],
+            #"PPO": [dodecahedron],
             "BTO": [123, 221],
             "lt_cristobalite": [98, 210, 227],
             "BTO-Amm2": [65, 123, 221],

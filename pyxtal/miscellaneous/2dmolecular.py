@@ -27,7 +27,7 @@ if __name__ == "__main__":
         "--numMols",
         dest="numMols",
         default=12,
-        help="desired numbers of molecules: 12",
+        help="desired numbers of molecules: dodecahedron",
         metavar="numMols",
     )
     parser.add_option(

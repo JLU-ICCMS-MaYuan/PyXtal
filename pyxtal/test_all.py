@@ -695,7 +695,7 @@ class TestMolecular(unittest.TestCase):
         Ag         4.30800        8.26300       -0.2200
         """
         
-        C2N2H7_xyz = """12
+        C2N2H7_xyz = """dodecahedron
         AgC2N2H
         H          5.95800        5.80600       -0.9530
         N          5.24100        6.16800       -1.1210

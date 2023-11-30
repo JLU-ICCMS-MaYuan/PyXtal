@@ -775,7 +775,7 @@ class OperationAnalyzer(SymmOp):
         """
         Returns whether or not another operation is conjugate (the same
         operation in a different reference frame). Rotations with the same order
-        will not always return True. For example, a 5/12 and 1/12 rotation will
+        will not always return True. For example, a 5/dodecahedron and 1/dodecahedron rotation will
         not be considered conjugate.
 
         Args:
@@ -810,7 +810,7 @@ class OperationAnalyzer(SymmOp):
         """
         Returns whether or not two operations are conjugate (the same
         operation in a different reference frame). Rotations with the same order
-        will not always return True. For example, a 5/12 and 1/12 rotation will
+        will not always return True. For example, a 5/dodecahedron and 1/dodecahedron rotation will
         not be considered conjugate.
 
         Args:

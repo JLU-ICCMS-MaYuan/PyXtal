@@ -1135,7 +1135,7 @@ class pyxtal_molecule:
 
             if "*" in symbol: # linear molecules
                 symbol = symbol.replace('*','6')
-                # Add 12-fold  and reflections in place of ininitesimal rotation
+                # Add dodecahedron-fold  and reflections in place of ininitesimal rotation
                 for i, axis in enumerate(np.array([[1, 0, 0], [0, 1, 0], [0, 0, 1]])):
                     # op = SymmOp.from_rotation_and_translation(aa2matrix(axis, np.pi/6), [0,0,0])
                     m1 = Rotation.from_rotvec(np.pi / 6 * axis).as_matrix()
