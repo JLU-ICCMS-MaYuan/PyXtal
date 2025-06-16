@@ -89,13 +89,13 @@ if __name__ == "__main__":
     la_mol = pyxtal_molecule(Molecule(["La"], [[0.0, 0.0, 0.0]]))
     diborane_mol = pyxtal_molecule("B2H6_D3d.xyz")   # 也可换成 B2H6_staggered.xyz
     
-    species = [la_mol, diborane_mol]
-    numIons = [2,2]            # 2a ×1  +  4d ×1
-    spg_group = ([79, 80, 82, 87, 88, 97, 98] + list(range(107, 111)) + list(range(119, 123)) + list(range(139, 143)))
-    
     # species = [la_mol, diborane_mol]
     # numIons = [2,2]            # 2a ×1  +  4d ×1
-    # spg_group = list(range(1, 231))
+    # spg_group = ([79, 80, 82, 87, 88, 97, 98] + list(range(107, 111)) + list(range(119, 123)) + list(range(139, 143)))
+    
+    species = [la_mol, diborane_mol]
+    numIons = [2,2]            # 2a ×1  +  4d ×1
+    spg_group = list(range(1, 231))
 
     print(spg_group)
     # ---------- 2. 生成函数 ----------
